@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: blueviolet;
+    background-image: url("Background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow: hidden;
+}
+
+.card {
+    background-color: #000;
+    opacity: 0.6;
+    padding: 1.5em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 380px;
+    margin: 1em;
+    color: white;
+    line-height: 3em;
+}
+
+
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* width:50%; */
+}
+
+.search input::placeholder,
+.search input {
+    font-family: 'Montserrat Alternates';
+}
+
+
+.city {
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.coordinates {
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.main {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.description {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.weather-icon {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon img {
+    display: block;
+    margin: 0 auto;
+    width: 5em;
+}
+
+.othertemp {
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.alts {
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 4em;
+    width: 4em;
+    outline: invert;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.8em;
+    border: white 4px solid;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    color: #fff;
+    font-size: 100%;
+}
+
+@media(max-width:500px) {
+    .card {
+        width: 70vw;
+        height: 75%;
+    }
+
+    .search-bar {
+        width: 75%;
+    }
+
+    input.search-bar {
+        font-size: 90%;
+    }
+
+    button {
+        width: 20%;
+        height: 20%;
+        aspect-ratio: 1/1;
+    }
+
+    .city {
+        font-size: 25px;
+    }
+
+    .feelslike,
+    .pressure {
+        font-size: 3.8vw;
+    }
+}
